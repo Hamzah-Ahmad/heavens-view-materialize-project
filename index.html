@@ -1,0 +1,198 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">  
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Photo Ninja</title>
+
+  <style>
+  	body{
+  		background: black;
+  		color: white;
+  		font-family: 'Quicksand', sans-serif;
+  	}
+
+    header{
+      background: url(images/milky-way.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 600px;
+    }
+
+    #contact{
+    	margin-bottom: 0;
+    	padding-bottom: 0;
+    }
+    nav li a{
+    	font-size: 17px;
+    }
+    .header-text{
+    	text-align: center;
+    	margin-top: 15%;
+    	font-style: italic;
+		font-family: 'Quicksand', sans-serif;
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .parallax-container {
+      height:  400px;
+    }
+    .user_input{
+    	padding-top: 10px;
+    }
+    .social-links{
+    	margin-top: 20px;
+    	margin-left: 20px;
+    }
+    @media screen and (max-width: 670px){
+    	header{
+    		min-height: 250px;
+    	}
+      	.parallax-container {
+      		height:  200px;
+    	} 
+    	.brand-logo{
+    		font-size: 20px !important;
+    	}   	
+    } 
+
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+  	<nav class="navbar transparent">
+  		<div class="container">
+  			<a href="" class="brand-logo">Heaven's View</a>
+  			<a href="" class="sidenav-trigger" data-target = "mobile-menu">
+  				<i class="material-icons">menu</i>
+  			</a>
+  			<ul class="right hide-on-med-and-down">
+  				<li><a href="#about">About Us</a></li>
+  				<li><a href="#services">Services</a></li>
+  				<li><a href="#contact">Contact</a></li>
+  			</ul>
+  			<ul class="sidenav grey lighten-2" id="mobile-menu">
+  				<li><a href="#about">About Us</a></li>
+  				<li><a href="#services">Services</a></li>
+  				<li><a href="#contact">Contact</a></li>
+  			</ul>
+  		</div>
+  	</nav>
+  	<h3 class="header-text hide-on-med-and-down">The Universe said, ‘Let me show your soul something beautiful.” </h3>
+
+  </header>
+
+  <!-- photo / grid -->
+	<section class=" section scrollspy"  id="about">
+	    <div class="row">
+	      <div class="col s12 l4">
+	          <img src="images/stars_one.jpg" alt="" class="responsive-img materialboxed">
+	      </div>
+	      <div class="col s12 l6 offset-l1">
+	        <h3>Our Story</h3>
+	        <p>Heaven's View was established in 2017 when a group of passionate star gazers decided to transform their passion into a career and share their love of star gazing with others.</p>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col s12 l4 offset-l1 push-l7">
+	          <img src="images/stars_two.jpg" alt="" class="responsive-img materialboxed">
+	      </div>
+	      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+	        <h3>Our Mission</h3>
+	        <p>We’re on a mission to bring the very best stargazing experiences to our customers at a very affordable price.</p>
+	      </div>
+	    </div>
+	 </section>
+
+  <!-- parallax -->	
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/stars_seven.png"></div>
+    </div>
+        
+
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+  	<div class="row">
+  		<div class="col s12 l6">
+  			<h3>Our Services</h3>
+  			<p>Heaven's View strives to provide the best stargazing experience to its customers. We have plans to accomodate groups of all sizes. Click the button below to view our different plans.</p>
+  			<button class="btn blue-grey lighten-1 waves-effect waves-light">More info</button>
+  		</div>
+  	</div>
+  </section>
+
+  <!-- parallax -->	
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/stars_five.jpg"></div>
+    </div>
+        
+  <!-- contact form -->
+  	<section class="container section scrollspy" id="contact">
+  		<div class="row">
+  			<div class="col s12 l5">
+	  			<h4>Contact Us</h4>
+	  		<form>
+	  			<div class="user_input">
+		  			<div class="input-field" >
+		  				<i class="material-icons prefix">email</i>
+		  				<input type="email" id="email">
+		            	<label for="email">Your Email</label>
+		  			</div>
+	  			</div>
+	  			<div class="user_input">
+		  			<div class="input-field">
+						<i class="material-icons prefix">message</i>
+			            <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+			            <label for="message">Your Message</label>
+		  			</div>
+	  			</div>
+	  			<div class="user_input">
+		  			<div class="input-field">
+		  				<button class="btn blue-grey lighten-1 waves-effect waves-light">Submit</button>
+		  			</div>
+	  			</div>
+	  		</form>
+	  	</div>
+	  	<div class="col s12 l5 push-l2">
+	  		<h4>Connect with us</h4>
+	  		<a href="#" class="btn-floating transparent social-links"><i class="fab fa-instagram"></i></a>
+	  		<a href="#" class="btn-floating transparent social-links"><i class="fab fa-facebook"></i></a>
+	  		<a href="#" class="btn-floating transparent social-links"><i class="fab fa-twitter"></i></a>
+	  	</div>
+  		</div>
+  	</section>
+  <!-- footer -->
+  <footer class="page-footer transparent">
+  	<div class="container">
+  		<div class="center">Copyright &#9400; 2018. All rights reserved</div>
+  	</div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    	$('.sidenav').sidenav();
+    	$('.materialboxed').materialbox();
+    	$('.parallax').parallax();
+    	$('.tabs').tabs();
+    	$('.scrollspy').scrollSpy({
+    		scrollOffset: 0
+    	});
+    });
+  </script>
+</body>
+</html>
